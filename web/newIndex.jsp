@@ -53,7 +53,7 @@
                 <!--Slide-->
                 <div class="carousel-inner" role="listbox">
                     <!-- Slide One - Set the background image for this slide in the line below -->
-                    <div class="carousel-item active" style="background-image: url('images/slide/slide1.jpg')">
+                    <div class="carousel-item active" style="background-image: url('images/slide/h1.jpg')">
 
                     </div>
                     <!-- Slide Two - Set the background image for this slide in the line below -->
@@ -61,7 +61,7 @@
 
                     </div>
                     <!-- Slide Three - Set the background image for this slide in the line below -->
-                    <div class="carousel-item" style="background-image: url('images/slide/slide3.jpg')">
+                    <div class="carousel-item" style="background-image: url('images/slide/h2.jpg')">
 
                     </div>
                 </div>
