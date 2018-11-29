@@ -45,13 +45,13 @@ public class IteminCart implements Serializable{
         this.salePrice = salePrice;
     }
     
-    public void setTotalPrice(int salePrice){
-        this.totalPrice += salePrice;
-    }
-    
-    public int getTotalPrice(){
-        return this.totalPrice;
-    }
+//    public void setTotalPrice(int salePrice){
+//        this.totalPrice += salePrice;
+//    }
+//    
+//    public int getTotalPrice(){
+//        return this.totalPrice;
+//    }
 
     public int getQuanlity() {
         return quantity;

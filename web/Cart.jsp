@@ -36,7 +36,7 @@
                             <td><img height="200px" src="${line.product.productphoto}"></td>
                             <td>${line.product.productname}</td>
                             <td>${line.quanlity}</td>
-                            <td>${line.totalPrice}</td>
+                            <td>${sessionScope.cart.totalPrice}</td>
                         </tr>
                     </c:forEach>
                 </tbody>
