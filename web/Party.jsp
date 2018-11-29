@@ -75,6 +75,18 @@
                                             </div>
                                         </div>
                                     </form>
+                                    <form action="Fav" method="post">
+                                        <div class="row mt-3">
+                                            <div class="col-12 ml-auto mr-auto">
+                                                <input type="hidden" value="${p.productid}" name="id">
+                                                <input type="hidden" value="${p.productname}" name="name">
+                                                <input type="hidden" value="${p.productphoto}" name="photo">
+                                                <input type="hidden" value="${p.productprice}" name="price">
+                                                <input type="hidden" value="${p.productdescription}" name="description">
+                                                <input type="submit" value="Favorite" class="btn btn-block" style="background-color: darksalmon;color: #fff;">
+                                            </div>
+                                        </div>
+                                    </form>
                                 </div>
                             </div>
                         </div>

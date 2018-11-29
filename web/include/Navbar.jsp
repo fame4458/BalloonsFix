@@ -43,7 +43,7 @@
                             <a class="nav-link js-scroll-trigger" href="ShowCart">CART (${sessionScope.cart != null ? sessionScope.cart.totalQuantity : "0"})</a>
                         </li>
                         <li class="nav-item">
-                            <a class="nav-link js-scroll-trigger" href="Fav">Favorite</a>
+                            <a class="nav-link js-scroll-trigger" href="FavoritePageSevlet">Favorite</a>
                         </li>
                         <li class="nav-item">
                             <a class="nav-link" style="text-transform: uppercase;cursor: default;color:#fff;">${sessionScope.account.username}</a>

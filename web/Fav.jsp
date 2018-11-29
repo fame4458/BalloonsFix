@@ -4,6 +4,7 @@
     Author     : POM
 --%>
 
+<%@ taglib prefix="c" uri="http://java.sun.com/jsp/jstl/core" %>
 <%@page contentType="text/html" pageEncoding="UTF-8"%>
 <!DOCTYPE html>
 <html>
@@ -13,12 +14,13 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
         <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
     </head>
-    <body style="font-family: 'Caveat', cursive; background-color: darksalmon">
-
+    <body style="font-family: 'Caveat', cursive;">
+        <jsp:include page="include/Navbar.jsp" />
+        <br>
         <div class="container">
-            <h1 class="text-center mt-5" style="color: #fff">Favorite</h1>
+            <h1 class="text-center mt-5" >Favorite</h1>
             <div class="row mt-2">
-                <c:forEach items="${product}" var="p" varStatus="vs">
+                <c:forEach items="${fav}" var="p" varStatus="vs">
                     <div class="col-lg-4 col-sm-6 portfolio-item mt-5">
                         <div class="card h-100">
                             <a href="#"><img class="card-img-top rounded" height="400px" src="${p.productphoto}"></a>
@@ -33,6 +35,7 @@
                                     <div class="row">
                                         <div class="col-6">
                                             <input type="hidden" value="${p.productid}" name="productid" />
+                                            <h4>${p.productprice} THB</h4>
                                         </div>
                                         <div class="col-6">
                                             <input type="submit" value="buy" class="btn btn-block" style="background-color: darksalmon;color: #fff;">
@@ -45,7 +48,7 @@
                 </c:forEach>
             </div>
         </div>
-                                        
+
         <div class="m-2 text-center">
             <a href="newIndex" style="color: #fff">Back</a>
         </div>
