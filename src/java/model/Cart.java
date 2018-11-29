@@ -40,6 +40,10 @@ public class Cart implements Serializable {
             this.remove(p.getProductname());
         }
     }
+    
+     public void remove() {
+        cart.clear();
+    }
 
     public void remove(String productCode) {
         cart.remove(productCode);

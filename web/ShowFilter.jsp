@@ -36,7 +36,7 @@
                                         </h4>
                                         <p class="card-text">${p.productdescription}</p>
                                     </div>
-                                    <form action="cart" method="post">
+                                    <form action="AddToCart" method="post">
                                         <div class="row">
                                             <div class="col-6">
                                                 <input type="number" name="quatity" value="1" min="1" class="form-control">

@@ -12,6 +12,7 @@ import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
 import javax.servlet.http.HttpSession;
+import model.Cart;
 
 /**
  *
@@ -36,6 +37,9 @@ public class CheckServlet extends HttpServlet {
             getServletContext().getRequestDispatcher("/ShowCart").forward(request, response);
             return;
         }
+        
+        Cart cart = (Cart) session.getAttribute("cart");
+        cart.remove();
         
         getServletContext().getRequestDispatcher("/Thank.jsp").forward(request, response);
     }
