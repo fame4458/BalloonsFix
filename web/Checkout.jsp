@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">        
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
         <title>Checkout</title>
 
     </head>
@@ -23,13 +24,13 @@
 
                     <form action="Check" method="post" >
                         <div class="form-group">
-                            <input name="creditNo" class="form-control" type="tel" pattern="\d*" maxlength="16" placeholder="Card Number">
+                            <input name="creditNo" class="form-control" type="tel" pattern="\d*" maxlength="16" placeholder="Card Number" required>
                         </div>
                         <div class="form-group">
-                            <input name="creditEx" class="form-control" type="tel" pattern="\d*" maxlength="4" placeholder="MM/YY">
+                            <input name="creditEx" class="form-control" type="tel" pattern="\d*" maxlength="4" placeholder="MM/YY" required>
                         </div>
                         <div class="form-group">
-                            <input name="creditCVV" class="form-control" type="tel" pattern="\d*" maxlength="3" placeholder="CVV">
+                            <input name="creditCVV" class="form-control" type="tel" pattern="\d*" maxlength="3" placeholder="CVV" required>
                         </div>
                         <div class="form-group text-center ">
                             <input type="submit" value="Confirm Checkout" class="btn" style="background-color: peru; color: #fff">

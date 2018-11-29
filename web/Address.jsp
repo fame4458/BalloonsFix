@@ -12,6 +12,7 @@
         <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.0.0/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">        
         <script src="//maxcdn.bootstrapcdn.com/bootstrap/4.1.1/js/bootstrap.min.js"></script>
         <script src="//cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+        <link href="https://fonts.googleapis.com/css?family=Caveat:400,700" rel="stylesheet">
         <title>Address</title>
 
     </head>
@@ -38,19 +39,19 @@
                         <div class="form-group">
                             <label class="control-label col-sm-2" for="fname">First Name:</label>
                             <div class="col-sm-10">          
-                                <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname">
+                                <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-2" for="lname">Last Name:</label>
                             <div class="col-sm-10">          
-                                <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname">
+                                <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required>
                             </div>
                         </div>
                         <div class="form-group">
                             <label class="control-label col-sm-2" for="tel">Tel.:</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="tel" placeholder="Enter Tel." name="tel">
+                                <input type="text" class="form-control" id="tel" maxlength="10" placeholder="Enter Tel." name="tel" required>
                             </div>
                         </div>
                         <div class="form-group">
