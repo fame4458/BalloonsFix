@@ -64,6 +64,10 @@
         <servlet-name>AddoneServlet</servlet-name>
         <servlet-class>servlet.AddoneServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>FavServlet</servlet-name>
+        <servlet-class>servlet.FavServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddToCartServlet</servlet-name>
         <url-pattern>/AddToCart</url-pattern>
@@ -127,6 +131,10 @@
     <servlet-mapping>
         <servlet-name>AddoneServlet</servlet-name>
         <url-pattern>/Addone</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>FavServlet</servlet-name>
+        <url-pattern>/Fav</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
