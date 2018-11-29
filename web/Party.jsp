@@ -68,6 +68,7 @@
                                         <div class="row">
                                             <div class="col-6">
                                                 <input type="hidden" value="${p.productid}" name="productid" />
+                                                <h4>${p.productprice} THB</h4>
                                             </div>
                                             <div class="col-6">
                                                 <input type="submit" value="buy" class="btn btn-block" style="background-color: darksalmon;color: #fff;">
