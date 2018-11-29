@@ -33,7 +33,12 @@ public class Cart implements Serializable{
     }
 
     public void remove(Product p) {
-        this.remove(p.getProductname());
+        IteminCart line = cart.get(p.getProductname());
+        if (line != null) {
+            cart.remove(p.getProductname());
+        } else {
+            line.setQuanlity(0);
+        }
     }
 
     public void remove(String productCode) {
