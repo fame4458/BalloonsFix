@@ -48,6 +48,18 @@
         <servlet-name>RemoveServlet</servlet-name>
         <servlet-class>servlet.RemoveServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>ThankServlet</servlet-name>
+        <servlet-class>servlet.ThankServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <servlet-class>servlet.CheckoutServlet</servlet-class>
+    </servlet>
+    <servlet>
+        <servlet-name>CheckServlet</servlet-name>
+        <servlet-class>servlet.CheckServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddToCartServlet</servlet-name>
         <url-pattern>/AddToCart</url-pattern>
@@ -95,6 +107,18 @@
     <servlet-mapping>
         <servlet-name>RemoveServlet</servlet-name>
         <url-pattern>/Remove</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>ThankServlet</servlet-name>
+        <url-pattern>/Thank</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckoutServlet</servlet-name>
+        <url-pattern>/Checkout</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>CheckServlet</servlet-name>
+        <url-pattern>/Check</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>

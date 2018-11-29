@@ -15,9 +15,9 @@ import javax.servlet.http.HttpSession;
 
 /**
  *
- * @author FAME
+ * @author SarinratBeauty
  */
-public class AddressServlet extends HttpServlet {
+public class ThankServlet extends HttpServlet {
 
     /**
      * Processes requests for both HTTP <code>GET</code> and <code>POST</code>
@@ -36,7 +36,7 @@ public class AddressServlet extends HttpServlet {
             return;
         }
         
-        getServletContext().getRequestDispatcher("/Address.jsp").forward(request, response);
+        getServletContext().getRequestDispatcher("/Checkout.jsp").forward(request, response);
     }
 
     // <editor-fold defaultstate="collapsed" desc="HttpServlet methods. Click on the + sign on the left to edit the code.">

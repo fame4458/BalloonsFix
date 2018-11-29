@@ -40,7 +40,7 @@
                             <td>${line.totalPrice}</td>
                             <td>
                                 <form action="Remove" method="post">
-                                    <input type="hidden" value="${p.productid}" name="productid" />
+                                    <input type="hidden" value="${line.product.productid}" name="productid" />
                                     <input type="submit" value="remove"/>
                                 </form>
                             </td>

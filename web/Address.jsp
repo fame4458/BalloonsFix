@@ -68,12 +68,12 @@
 
         <form action="Thank" method="post">
             <div class="col-lg-12 text-center" >
-                <input type="submit" class="btn px-5 py-2 mt-3"style="background-color: peru; color: #fff">
+                <input type="submit" value="Confirm" class="btn px-5 py-2 mt-3" style="background-color: peru; color: #fff">
             </div>
         </form>
 
         <div class="m-2 text-center">
-            <a href="Cart.jsp" style="color: #fff">Back</a>
+            <a href="ShowCart" style="color: #fff">Back</a>
         </div>
 
 

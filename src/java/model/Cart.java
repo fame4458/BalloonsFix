@@ -16,7 +16,8 @@ import java.util.Map;
  *
  * @author FAME
  */
-public class Cart implements Serializable{
+public class Cart implements Serializable {
+
     private Map<String, IteminCart> cart;
 
     public Cart() {
@@ -34,10 +35,9 @@ public class Cart implements Serializable{
 
     public void remove(Product p) {
         IteminCart line = cart.get(p.getProductname());
-        if (line != null) {
-            cart.remove(p.getProductname());
-        } else {
-            line.setQuanlity(0);
+        line.setQuanlity(line.getQuanlity() - 1);
+        if (line.getQuanlity() == 0) {
+            this.remove(p.getProductname());
         }
     }
 
@@ -49,7 +49,7 @@ public class Cart implements Serializable{
         int sum = 0;
         Collection<IteminCart> lineItems = cart.values();
         for (IteminCart lineItem : lineItems) {
-            sum += (int)lineItem.getSalePrice();
+            sum += (int) lineItem.getSalePrice();
         }
         return sum;
     }
@@ -62,7 +62,8 @@ public class Cart implements Serializable{
         }
         return sum;
     }
-    public List<IteminCart> getLineItems(){
+
+    public List<IteminCart> getLineItems() {
         return new ArrayList(cart.values());
     }
 }
