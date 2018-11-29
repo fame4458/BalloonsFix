@@ -16,42 +16,45 @@
 
     </head>
     <body style="background-color: darksalmon; color: #fff;font-family: 'Caveat', cursive;">
-        <h1 class="m-5 text-center">Your Cart</h1>
+        <div class="container">
 
-        <table class="table mt-5">
-            <thead  style="background-color: peru">
-                <tr>
-                    <th scope="col">Image</th>
-                    <th scope="col">Product Name</th>
-                    <th scope="col">Quantity</th>
-                    <th scope="col">Price</th>
-                </tr>
-            </thead>
-            <tbody style="background-color: #fff; color: black">
-            <c:set var="items" value="${sessionScope.cart.lineItems}" />
-            <c:forEach items="${cart.lineItems}" var="line" varStatus="vs">
-                <tr>
-                    <td><img height="200px" src="${line.product.productphoto}"></td>
-                    <td>${line.product.productname}</td>
-                    <td>${line.quanlity}</td>
-                    <td>${line.product.productprice}</td>
-                </tr>
-            </c:forEach>
-        </tbody>
-    </table>
+            <h1 class="m-5 text-center">Your Cart</h1>
 
-    <div class="col-lg-12 text-center">
-        <form action="Address" method="post">
-            <input type="submit" name="check" tabindex="4" class="btn px-5 py-2 mt-3" 
-                   value="Check Out" style="background-color: peru ;color: #fff;" >
-        </form>
+            <table class="table mt-5">
+                <thead  style="background-color: peru">
+                    <tr>
+                        <th scope="col">Image</th>
+                        <th scope="col">Product Name</th>
+                        <th scope="col">Quantity</th>
+                        <th scope="col">Price</th>
+                    </tr>
+                </thead>
+                <tbody style="background-color: #fff; color: black">
+                    <c:set var="items" value="${sessionScope.cart.lineItems}" />
+                    <c:forEach items="${cart.lineItems}" var="line" varStatus="vs">
+                        <tr>
+                            <td><img height="200px" src="${line.product.productphoto}"></td>
+                            <td>${line.product.productname}</td>
+                            <td>${line.quanlity}</td>
+                            <td>${line.totalPrice}</td>
+                        </tr>
+                    </c:forEach>
+                </tbody>
+            </table>
 
-    </div>
+            <div class="col-lg-12 text-center">
+                <form action="Address" method="post">
+                    <input type="submit" name="check" tabindex="4" class="btn px-5 py-2 mt-3" 
+                           value="Check Out" style="background-color: peru ;color: #fff;" >
+                </form>
 
-    <div class="m-2 text-center">
-        <a href="index.html" style="color: #fff">Back</a>
-    </div>
+            </div>
 
-</body>
+            <div class="m-2 text-center">
+                <a href="newIndex" style="color: #fff">Back</a>
+            </div>
+
+        </div>
+    </body>
 
 </html>

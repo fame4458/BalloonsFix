@@ -14,6 +14,7 @@ import java.io.Serializable;
 public class IteminCart implements Serializable{
     private Product product;
     private int salePrice;
+    private int totalPrice = 0 ;
     private int quantity;
     
     public IteminCart(){
@@ -42,6 +43,14 @@ public class IteminCart implements Serializable{
 
     public void setSalePrice(int salePrice) {
         this.salePrice = salePrice;
+    }
+    
+    public void setTotalPrice(int salePrice){
+        this.totalPrice += salePrice;
+    }
+    
+    public int getTotalPrice(){
+        return this.totalPrice;
     }
 
     public int getQuanlity() {

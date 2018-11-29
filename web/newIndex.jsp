@@ -78,9 +78,7 @@
 
         <div class="container-fluid text-light" style="background-color: Peru  ">
             <div class="container text-center" style="background-color: peru">
-                <h1>
-                    Balloons Market
-                </h1>
+                <img src="images/logo1.png">
                 <h3 style="margin-bottom: 0">
                     Have a party Have a BALLOONS MARKET!
                 </h3>   

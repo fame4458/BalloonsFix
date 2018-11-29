@@ -29,6 +29,7 @@ public class Cart implements Serializable{
             cart.put(p.getProductname(), new IteminCart(p));
         } else {
             line.setQuanlity(line.getQuanlity() + 1);
+            line.setTotalPrice(p.getProductprice());
         }
     }
 
@@ -40,11 +41,11 @@ public class Cart implements Serializable{
         cart.remove(productCode);
     }
 
-    public double getTotalPrice() {
-        double sum = 0;
+    public int getTotalPrice() {
+        int sum = 0;
         Collection<IteminCart> lineItems = cart.values();
         for (IteminCart lineItem : lineItems) {
-            sum += lineItem.getSalePrice();
+            sum += lineItem.getProduct().getProductprice();
         }
         return sum;
     }
