@@ -123,10 +123,11 @@ insert into account(userName,passWord,email) values
 CREATE TABLE favorite(
   favID int primary key generated always as identity (start with 1,increment by 1),
   accID int NOT NULL,
+productID int NOT NULL,
   productName varchar(70) NOT NULL,
   productDescription clob NOT NULL,
   productPrice int NOT NULL,
-  productPhoto varchar(300) NOT NULL,
+  productPhoto varchar(300) NOT NULL
 ) ;
 
 
