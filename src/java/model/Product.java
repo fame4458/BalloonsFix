@@ -31,7 +31,10 @@ import javax.xml.bind.annotation.XmlRootElement;
     , @NamedQuery(name = "Product.findByProductname", query = "SELECT p FROM Product p WHERE p.productname = :productname")
     , @NamedQuery(name = "Product.findByProducttype", query = "SELECT p FROM Product p WHERE p.producttype = :producttype")
     , @NamedQuery(name = "Product.findByProductprice", query = "SELECT p FROM Product p WHERE p.productprice = :productprice")
-    , @NamedQuery(name = "Product.findByProductphoto", query = "SELECT p FROM Product p WHERE p.productphoto = :productphoto")})
+    , @NamedQuery(name = "Product.findByProductphoto", query = "SELECT p FROM Product p WHERE p.productphoto = :productphoto")
+    , @NamedQuery(name = "Product.findByProductAll", query = "SELECT p FROM Product p WHERE p.productname LIKE :productname"
+            + " AND p.producttype LIKE :producttype")})
+
 public class Product implements Serializable {
 
     private static final long serialVersionUID = 1L;
@@ -153,5 +156,5 @@ public class Product implements Serializable {
     public String toString() {
         return "model.Product[ productid=" + productid + " ]";
     }
-    
+
 }

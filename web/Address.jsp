@@ -30,7 +30,7 @@
                         <br>
                         <h2>Address</h2>
                         <br>
-                        <h4>We would love to hear from you !</h4>
+                        <h5>We would love to hear from you !</h5>
                     </div>
                 </div>
                 <div class="col-md-9">
@@ -77,10 +77,7 @@
         </div>
 
 
-        <!--pop up Code-->
-        <div class="popup" onclick="myFunction()">Click me!
-            <span class="popuptext" id="myPopup">Thank You</span>
-        </div>
+
 
     </body>
 </html>
