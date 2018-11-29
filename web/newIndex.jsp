@@ -79,7 +79,7 @@
         <div class="container-fluid text-light" style="background-color: Peru  ">
             <div class="container text-center" style="background-color: peru">
                 <img src="images/logo1.png">
-                <h3 style="margin-bottom: 0">
+                <h3 class="pb-5 mb-0">
                     Have a party Have a BALLOONS MARKET!
                 </h3>   
             </div>
