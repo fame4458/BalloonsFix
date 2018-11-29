@@ -27,6 +27,7 @@
                         <th scope="col">Product Name</th>
                         <th scope="col">Quantity</th>
                         <th scope="col">Price</th>
+                        <th scope="col"></th>
                     </tr>
                 </thead>
                 <tbody style="background-color: #fff; color: black">
@@ -36,7 +37,13 @@
                             <td><img height="200px" src="${line.product.productphoto}"></td>
                             <td>${line.product.productname}</td>
                             <td>${line.quanlity}</td>
-                            <td>${sessionScope.cart.totalPrice}</td>
+                            <td>${line.totalPrice}</td>
+                            <td>
+                                <form action="Remove" method="post">
+                                    <input type="hidden" value="${p.productid}" name="productid" />
+                                    <input type="submit" value="remove"/>
+                                </form>
+                            </td>
                         </tr>
                     </c:forEach>
                 </tbody>

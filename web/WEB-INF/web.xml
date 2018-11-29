@@ -44,6 +44,10 @@
         <servlet-name>AddressServlet</servlet-name>
         <servlet-class>servlet.AddressServlet</servlet-class>
     </servlet>
+    <servlet>
+        <servlet-name>RemoveServlet</servlet-name>
+        <servlet-class>servlet.RemoveServlet</servlet-class>
+    </servlet>
     <servlet-mapping>
         <servlet-name>AddToCartServlet</servlet-name>
         <url-pattern>/AddToCart</url-pattern>
@@ -87,6 +91,10 @@
     <servlet-mapping>
         <servlet-name>AddressServlet</servlet-name>
         <url-pattern>/Address</url-pattern>
+    </servlet-mapping>
+    <servlet-mapping>
+        <servlet-name>RemoveServlet</servlet-name>
+        <url-pattern>/Remove</url-pattern>
     </servlet-mapping>
     <session-config>
         <session-timeout>
