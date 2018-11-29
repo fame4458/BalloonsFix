@@ -46,6 +46,13 @@
                             </td>
                         </tr>
                     </c:forEach>
+                        <tr>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>${sessionScope.cart.totalPrice}</td>
+                            <td></td>
+                        </tr>
                 </tbody>
             </table>
 
