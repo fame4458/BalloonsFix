@@ -17,7 +17,7 @@
         <div class="container">
             <div class="text-center mt-5">
                 <h1>Thank You</h1>
-                <h1>For You Support</h1>
+                <h1>For Your Support</h1>
                 <div class="row">
                     <div class="col-4 ml-auto mr-auto mt-5">
                         <a href="newIndex" style="text-decoration: none;"><button class="btn btn-block" style="background-color: peru ;color: #fff;">Go To Homepage</button></a>
