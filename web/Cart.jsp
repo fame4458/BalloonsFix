@@ -28,6 +28,7 @@
                         <th scope="col">Quantity</th>
                         <th scope="col">Price</th>
                         <th scope="col"></th>
+                        <th scope="col"></th>
                     </tr>
                 </thead>
                 <tbody style="background-color: #fff; color: black">
@@ -38,6 +39,12 @@
                             <td>${line.product.productname}</td>
                             <td>${line.quanlity}</td>
                             <td>${line.totalPrice}</td>
+                            <td>
+                                <form action="Addone" method="post">
+                                    <input type="hidden" value="${line.product.productid}" name="productid" />
+                                    <input type="submit" value="add"/>
+                                </form>
+                            </td>
                             <td>
                                 <form action="Remove" method="post">
                                     <input type="hidden" value="${line.product.productid}" name="productid" />
@@ -51,6 +58,7 @@
                             <td></td>
                             <td></td>
                             <td>${sessionScope.cart.totalPrice}</td>
+                            <td></td>
                             <td></td>
                         </tr>
                 </tbody>
