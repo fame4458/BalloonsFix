@@ -56,7 +56,7 @@
                         <tr>
                             <td></td>
                             <td></td>
-                            <td></td>
+                            <td>Total Price</td>
                             <td>${sessionScope.cart.totalPrice}</td>
                             <td></td>
                             <td></td>
