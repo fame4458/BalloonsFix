@@ -30,9 +30,14 @@ public class AddoneServlet extends HttpServlet {
     EntityManagerFactory emf;
     @Resource
     UserTransaction utx;
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         HttpSession session = request.getSession(true);
+        if (session == null || session.getAttribute("account") == null) {
+            getServletContext().getRequestDispatcher("/Login").forward(request, response);
+            return;
+        }
         Cart cart = (Cart) session.getAttribute("cart");
         if (cart == null) {
             cart = new Cart();
@@ -40,9 +45,9 @@ public class AddoneServlet extends HttpServlet {
         }
         String productIDStr = request.getParameter("productid");
         int productID = Integer.parseInt(productIDStr);
-        
+
         ProductJpaController pCtrl = new ProductJpaController(utx, emf);
-        
+
         Product p = pCtrl.findProduct(productID);
         cart.add(p);
         response.sendRedirect("ShowCart");

@@ -35,7 +35,7 @@ public class FavServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException, Exception {
         HttpSession session = request.getSession();
-        if (session.getAttribute("account") == null) {
+        if (session == null || session.getAttribute("account") == null) {
             getServletContext().getRequestDispatcher("/Login").forward(request, response);
             return;
         }

@@ -31,11 +31,16 @@ public class ThankServlet extends HttpServlet {
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         HttpSession session = request.getSession();
+
+        if (session == null || session.getAttribute("account") == null) {
+            getServletContext().getRequestDispatcher("/Login").forward(request, response);
+            return;
+        }
         if (session.getAttribute("cart") == null) {
             getServletContext().getRequestDispatcher("/ShowCart").forward(request, response);
             return;
         }
-        
+
         getServletContext().getRequestDispatcher("/Checkout.jsp").forward(request, response);
     }
 

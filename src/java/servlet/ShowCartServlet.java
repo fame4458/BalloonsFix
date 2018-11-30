@@ -11,6 +11,7 @@ import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
 import javax.servlet.http.HttpServletRequest;
 import javax.servlet.http.HttpServletResponse;
+import javax.servlet.http.HttpSession;
 
 /**
  *
@@ -29,6 +30,12 @@ public class ShowCartServlet extends HttpServlet {
      */
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
+        HttpSession session = request.getSession();
+        if (session == null || session.getAttribute("account") == null) {
+            getServletContext().getRequestDispatcher("/Login").forward(request, response);
+            return;
+        }
+        
         getServletContext().getRequestDispatcher("/Cart.jsp").forward(request, response);
     }
 

@@ -26,7 +26,7 @@
             <div class="container">
                 <div class="row mt-2">
                     <c:forEach items="${product}" var="p" varStatus="vs">
-                        <div class="col-lg-4 col-sm-6 portfolio-item mt-5">
+                        <div class="col-lg-4 col-sm-6 portfolio-item mt-5 mb-5">
                             <div class="card h-100">
                                 <a href="#"><img class="card-img-top rounded" height="400px" src="${p.productphoto}"></a>
                                 <div class="card-body ">

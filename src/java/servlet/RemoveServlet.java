@@ -36,6 +36,10 @@ public class RemoveServlet extends HttpServlet {
             throws ServletException, IOException {
         HttpSession session = request.getSession(true);
         Cart cart = (Cart) session.getAttribute("cart");
+        if (session == null || session.getAttribute("account") == null) {
+            getServletContext().getRequestDispatcher("/Login").forward(request, response);
+            return;
+        }
         if (cart == null) {
             cart = new Cart();
             session.setAttribute("cart", cart);

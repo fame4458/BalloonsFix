@@ -28,22 +28,27 @@ public class AddToCartServlet extends HttpServlet {
 
     @PersistenceUnit(unitName = "WebApplication3PU")
     EntityManagerFactory emf;
-    
+
     @Resource
     UserTransaction utx;
+
     protected void processRequest(HttpServletRequest request, HttpServletResponse response)
             throws ServletException, IOException {
         HttpSession session = request.getSession(true);
         Cart cart = (Cart) session.getAttribute("cart");
+        if (session == null || session.getAttribute("account") == null) {
+            getServletContext().getRequestDispatcher("/Login").forward(request, response);
+            return;
+        }
         if (cart == null) {
             cart = new Cart();
             session.setAttribute("cart", cart);
         }
         String productIDStr = request.getParameter("productid");
         int productID = Integer.parseInt(productIDStr);
-        
+
         ProductJpaController pCtrl = new ProductJpaController(utx, emf);
-        
+
         Product p = pCtrl.findProduct(productID);
         cart.add(p);
         response.sendRedirect("newIndex");
