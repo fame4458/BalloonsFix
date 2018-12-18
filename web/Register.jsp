@@ -44,6 +44,9 @@
                                             <input type="password" name="pass"  tabindex="1" class="form-control" placeholder="Password">
                                         </div>
                                         <div class="form-group">
+                                            <input type="password" name="confirmpass"  tabindex="1" class="form-control" placeholder="Confirm Password">
+                                        </div>
+                                        <div class="form-group">
                                             <input type="email" name="mail" tabindex="1" class="form-control" placeholder="Email Address">
                                         </div>
                                         <div class="form-group">
