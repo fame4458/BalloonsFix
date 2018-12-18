@@ -27,7 +27,8 @@
                 <div class="col-md-6 col-md-offset-3" style="background-color: #fff;border-radius: .2em;">
                     <div class="panel panel-register">
                         <div class="panel-heading">
-                            <h2 class="text-center m-4">Register</h2>       
+                            <h2 class="text-center m-4">Register</h2> 
+                            <h4 class="text-center mt-3">${Message}</h4>
                             <hr>
 
                         </div>
