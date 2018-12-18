@@ -36,10 +36,16 @@ public class RegisterServlet extends HttpServlet {
             throws ServletException, IOException, Exception {
         String username = request.getParameter("user");
         String password = request.getParameter("pass");
+        String confirmpass = request.getParameter("confirmpass");
         String email = request.getParameter("mail");
-
+        
+        
+        
         if (username != null && password != null) {
-
+            
+        
+            if(password.equals(confirmpass)){
+            
             AccountJpaController accCtrl = new AccountJpaController(utx, emf);
             Account acc = new Account();
             acc.setUsername(username);
@@ -51,6 +57,9 @@ public class RegisterServlet extends HttpServlet {
             request.setAttribute("Message", "Register Complete");
             getServletContext().getRequestDispatcher("/Login").forward(request, response);
             return;
+        }else{
+            request.setAttribute("Message", "Wrong Password");
+            }
         }
 
         getServletContext().getRequestDispatcher("/Register.jsp").forward(request, response);
