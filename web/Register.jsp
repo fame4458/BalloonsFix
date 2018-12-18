@@ -38,16 +38,16 @@
 
                                     <form action="Register" method="post">
                                         <div class="form-group">
-                                            <input type="text" name="user" tabindex="1" class="form-control" placeholder="Username" >
+                                            <input type="text" name="user" tabindex="1" class="form-control" placeholder="Username" required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" name="pass"  tabindex="1" class="form-control" placeholder="Password">
+                                            <input type="password" name="pass"  tabindex="1" class="form-control" placeholder="Password" required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="password" name="confirmpass"  tabindex="1" class="form-control" placeholder="Confirm Password">
+                                            <input type="password" name="confirmpass"  tabindex="1" class="form-control" placeholder="Confirm Password" required>
                                         </div>
                                         <div class="form-group">
-                                            <input type="email" name="mail" tabindex="1" class="form-control" placeholder="Email Address">
+                                            <input type="email" name="mail" tabindex="1" class="form-control" placeholder="Email Address" required>
                                         </div>
                                         <div class="form-group">
                                             <div class="row">

@@ -34,34 +34,29 @@
                         <h5>We would love to hear from you !</h5>
                     </div>
                 </div>
+                
                 <div class="col-md-9">
                     <div class="contact-form">
                         <div class="form-group">
-                            <label class="control-label col-sm-2" for="fname">First Name:</label>
                             <div class="col-sm-10">          
-                                <input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
+                                First Name:<input type="text" class="form-control" id="fname" placeholder="Enter First Name" name="fname" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-sm-2" for="lname">Last Name:</label>
                             <div class="col-sm-10">          
-                                <input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required>
+                                Last Name:<input type="text" class="form-control" id="lname" placeholder="Enter Last Name" name="lname" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-sm-2" for="tel">Tel.:</label>
                             <div class="col-sm-10">
-                                <input type="text" class="form-control" id="tel" maxlength="10" placeholder="Enter Tel." name="tel" required>
+                                Tel.:<input type="text" class="form-control" id="tel" maxlength="10" placeholder="Enter Tel." name="tel" required>
                             </div>
                         </div>
                         <div class="form-group">
-                            <label class="control-label col-sm-2" for="address">Address:</label>
                             <div class="col-sm-10">
-                                <textarea class="form-control" rows="5" id="comment"></textarea>
+                                Address:<textarea class="form-control" rows="5" id="comment"></textarea>
                             </div>
                         </div>
-
-
                     </div>
                 </div>
             </div>
